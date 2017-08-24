@@ -1,0 +1,10 @@
+<!--file to display users name and email -->
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <h1>
+      <%= gravatar_for @user %>
+      <%= @user.name %>
+    </h1>
+  </aside>
+</div>
